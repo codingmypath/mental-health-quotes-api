@@ -115,136 +115,23 @@ const quotes =
     
 
 
-const players = {
-        'alisson_becker': {
-            'number': 1,
-            'position': 'Goalkeeper',
-            'nationality': 'Brazil',
-            'image': 'alisson.jpeg'
-        },
-        'adrian': {
-            'number': 13,
-            'position': 'Goalkeeper',
-            'nationality': 'Spain'
-        },
-        'virgil van dijk': {
-            'number': 4,
-            'position': 'Defender',
-            'nationality': 'Netherlands'
-        },
-        'ibrahima konate': {
-            'number': 5,
-            'position': 'Defender',
-            'nationality': 'France'
-        },
-        'joe gomez': {
-            'number': 12,
-            'position': 'Defender',
-            'nationality': 'England'
-        },
-        'kostas tsimikas': {
-            'number': 21,
-            'position': 'Defender',
-            'nationality': 'Greece'
-        },
-        'andy robertson': {
-            'number': 26,
-            'position': 'Defender',
-            'nationality': 'Scotland'
-        },
-        'joel matip': {
-            'number': 32,
-            'position': 'Defender',
-            'nationality': 'Cameroon'
-        },
-        'trent alexander arnold': {
-            'number': 66,
-            'position': 'Defender',
-            'nationality': 'England'
-        },
-        'fabinho': {
-            'number': 3,
-            'position': 'Midfielder',
-            'nationality': 'Brazil'
-        },
-        'thiago alcantara': {
-            'number': 6,
-            'position': 'Midfielder',
-            'nationality': 'Spain'
-        },
-        'james milner': {
-            'number': 7,
-            'position': 'Midfielder',
-            'nationality': 'England'
-        },
-        'naby keita': {
-            'number': 8,
-            'position': 'Midfielder',
-            'nationality': 'Guinea'
-        },
-        'jordan henderson': {
-            'number': 14,
-            'position': 'Midfielder',
-            'nationality': 'England'
-        },
-        'alex oxlande-chamberlain': {
-            'number': 15,
-            'position': 'Midfielder',
-            'nationality': 'England'
-        },
-        'curtis jones': {
-            'number': 17,
-            'position': 'Midfielder',
-            'nationality': 'England'
-        },
-        'harvey elliot': {
-            'number': 19,
-            'position': 'Midfielder',
-            'nationality': 'England'
-        },
-        'roberto firmino': {
-            'number': 9,
-            'position': 'Forward',
-            'nationality': 'Brazil'
-        },
-        'mohamed salah': {
-            'number': 11,
-            'position': 'Forward',
-            'nationality': 'Egypt'
-        },
-        'luis diaz': {
-            'number': 23,
-            'position': 'Forward',
-            'nationality': 'Colombia'
-        },
-        'darwin nunez': {
-            'number': 27,
-            'position': 'Forward',
-            'nationality': 'Uruguay'
-        }
-}
 
 
+// app.get('/', (request, response) => {
+//     response.sendFile(__dirname + '/index.html')
+// })
 
+// app.get('/api/:playerName', (request, response) => {
+//     const playersName = request.params.playerName.toLowerCase()
+//     if (quotes[playersName]) {
+//         response.json(players[playersName])
+//     }
 
-app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/index.html')
-})
+// })
 
-app.get('/api/:playerName', (request, response) => {
-    const playersName = request.params.playerName.toLowerCase()
-    if (quotes[playersName]) {
-        response.json(players[playersName])
-    }
-
-})
-
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`The server is running on PORT ${PORT}`)
-})
-
-
-
+// app.listen(process.env.PORT || PORT, () => {
+//     console.log(`The server is running on PORT ${PORT}`)
+// })
 
 
 app.get('/', (request, response) => {
@@ -254,9 +141,8 @@ app.get('/', (request, response) => {
 app.get('/api/:quote', (request, response) => {
     const quote = request.params.quote.toLowerCase()
     if (quotes[quote]) {
-        response.json(quotes[playersName])
+        response.json(quotes[quote])
     }
-
 })
 
 app.listen(process.env.PORT || PORT, () => {
