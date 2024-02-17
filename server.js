@@ -145,6 +145,10 @@ app.get('/api/:quote', (request, response) => {
     }
 })
 
+app.get('/api/:quotes', (request, response) => {
+        response.json(quotes)
+})
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on PORT ${PORT}`)
 })
