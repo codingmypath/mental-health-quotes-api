@@ -115,37 +115,18 @@ const quotes =
     
 
 
-
-
-// app.get('/', (request, response) => {
-//     response.sendFile(__dirname + '/index.html')
-// })
-
-// app.get('/api/:playerName', (request, response) => {
-//     const playersName = request.params.playerName.toLowerCase()
-//     if (quotes[playersName]) {
-//         response.json(players[playersName])
-//     }
-
-// })
-
-// app.listen(process.env.PORT || PORT, () => {
-//     console.log(`The server is running on PORT ${PORT}`)
-// })
-
-
 app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:quote', (request, response) => {
-    const quote = request.params.quote.toLowerCase()
-    if (quotes[quote]) {
-        response.json(quotes[quote])
-    }
-})
+// app.get('/api/:quoteName', (request, response) => {
+//     const quote = request.params.quote.toLowerCase()
+//     if (quotes[quote]) {
+//         response.json(quotes[quote])
+//     }
+// })
 
-app.get('/api/:quotes', (request, response) => {
+app.get('/api/allQuotes', (request, response) => {
         response.json(quotes)
 })
 
