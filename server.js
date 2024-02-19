@@ -24,10 +24,6 @@ const quotes =
         "author": "Germany Kent",
     },
     {
-        "quote": "Anyone can be affected, despite their level of success or their place on the food chain. In fact, there is a good chance you know someone who is struggling with it since nearly 20% of American adults face some form of mental illness in their lifetime. So why aren’t we talking about it?",
-        "author":"Kristen Bell",
-    },
-    {
         "quote": "You don’t have to control your thoughts. You just have to stop letting them control you.",
         "author": "Dan Millman",
     },
@@ -109,8 +105,13 @@ const quotes =
     }, {
         "quote": "Nothing can dim the light that shines from within",
         "author": "Maya Angelou"
+    }, {
+        "quote": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
+        "author": "Thich Nhat Hanh",
+    }, {
+        "quote": "Even if we don’t have the power to choose where we come from, we can still choose where we go from there.",
+        "author": "Stephen Chbosky",
     }
-
 ]
     
 
