@@ -40,8 +40,8 @@ const quotes =
         "author": "Kerry Washington",
     },
     {
-        "quote": "It is not the bruises on the body that hurt. It is the wounds of the heart and the scars on the mind.",
-        "author": "Aisha Mirza",
+        "quote": "Sometimes self-care is exercise and eating right. Sometimes it’s spending time with loved ones or taking a nap … Whatever soothes your soul.",
+        "author": "Nanea Hoffman",
     },
     {
         "quote": "Mental health…is not a destination, but a process. It’s about how you drive, not where you’re going.",
@@ -102,16 +102,23 @@ const quotes =
     {
         "quote": "You don’t have to be positive all the time. It’s perfectly okay to feel sad, angry, annoyed, frustrated, scared and anxious. Having feelings doesn’t make you a negative person. It makes you human.",
         "author": "Lori Deschene",
-    }, {
+    }, 
+    {
         "quote": "Nothing can dim the light that shines from within",
         "author": "Maya Angelou"
-    }, {
+    }, 
+    {
         "quote": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
         "author": "Thich Nhat Hanh",
-    }, {
+    }, 
+    {
         "quote": "Even if we don’t have the power to choose where we come from, we can still choose where we go from there.",
         "author": "Stephen Chbosky",
-    }
+    },
+    {
+        "quote": "One day, in retrospect, the years of struggle will strike you as the most beautiful.",
+        "author": "Sigmund Freud",
+    },
 ]
     
 
